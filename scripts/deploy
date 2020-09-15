@@ -1,0 +1,4 @@
+#!/bin/sh
+set -eu
+
+kustomize build base | kubectl --context cellulose apply -f -
